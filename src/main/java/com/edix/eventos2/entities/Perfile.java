@@ -25,20 +25,26 @@ public class Perfile implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_perfil")
-	private int idPerfil;
+	private int id_perfil;
 
 	private String nombre;
 
 	public Perfile() {
 	}
 
-	public int getIdPerfil() {
-		return this.idPerfil;
+	
+
+	public int getId_perfil() {
+		return id_perfil;
 	}
 
-	public void setIdPerfil(int idPerfil) {
-		this.idPerfil = idPerfil;
+
+
+	public void setId_perfil(int id_perfil) {
+		this.id_perfil = id_perfil;
 	}
+
+
 
 	public String getNombre() {
 		return this.nombre;

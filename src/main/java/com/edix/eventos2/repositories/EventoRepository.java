@@ -24,4 +24,7 @@ public interface EventoRepository extends JpaRepository<Evento, Integer> {
 	@Query ( "Select e from Evento e")
 	List <Evento> todosEventos ();
 	
+	
+	Evento findByIdEvento(int idEvento);
+	
 }

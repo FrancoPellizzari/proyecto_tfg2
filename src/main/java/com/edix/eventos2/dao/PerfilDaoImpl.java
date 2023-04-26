@@ -16,14 +16,14 @@ public class PerfilDaoImpl implements PerfilDao {
 	PerfilRepository perfilRepo;
 	
 	@Override
-	public Perfile findById(int idPerfil) {
+	public Perfile findById(int id_perfil) {
 		
-		return perfilRepo.findById(idPerfil).orElse(null);
+		return perfilRepo.findById(id_perfil).orElse(null);
 	}
 
 	@Override
 	public boolean guardar(Perfile perfil) {
-		if (findById(perfil.getIdPerfil()) == null) {
+		if (findById(perfil.getId_perfil()) == null) {
 			perfilRepo.save(perfil);
 			return true;
 		}
@@ -38,9 +38,9 @@ public class PerfilDaoImpl implements PerfilDao {
 	}
 
 	@Override
-	public void eliminar(int idPerfil) {
+	public void eliminar(int id_perfil) {
 		// TODO Auto-generated method stub
-		perfilRepo.deleteById(idPerfil);
+		perfilRepo.deleteById(id_perfil);
 	}
 
 	@Override

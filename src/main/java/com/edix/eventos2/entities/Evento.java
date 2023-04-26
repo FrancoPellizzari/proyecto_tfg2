@@ -24,6 +24,7 @@ public class Evento implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "idEvento")
 	private int idEvento;
 
 	private byte activo;

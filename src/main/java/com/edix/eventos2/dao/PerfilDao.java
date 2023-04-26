@@ -8,10 +8,10 @@ import com.edix.eventos2.entities.Perfile;
 
 public interface PerfilDao {
 
-	  Perfile findById(int idPerfil);
+	  Perfile findById(int id_perfil);
 	  boolean guardar(Perfile perfil);
 	  List<Perfile> obtenerTodos();
-	  void eliminar(int idPerfil);
+	  void eliminar(int id_perfil);
 	  Perfile actualizar(Perfile perfil);
 	  Perfile altaPerfil(Perfile perfil);
 }
